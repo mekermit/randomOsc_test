@@ -6,12 +6,7 @@ let freqArray;
 let randomizedFreq;
 let randfr;
 let start_Btn;
-
-/* function radioEqValue() {
-    const frequency = document.querySelector('input[name="frequency"]:checked').value;
-    radioEqFreq = int(frequency);
-    return radioEqFreq;
-} */
+let startSound;
 
 function oscPlaying() {
     osc.start();
@@ -61,10 +56,6 @@ function setup() {
     rF = int(random(1, freqArray.length));
     randfr = int(freqArray[rF].value);
 
-    /* for (let rF = 1; rF < freqArray.length; rF++) {
-        randomizedFreq = int(freqArray[rF].value);
-    } */
-
     start_Btn = createButton('start!');
     start_Btn.mousePressed(startBtn);
 }
@@ -88,6 +79,3 @@ function draw() {
 
     getGood();
 }
-
-/* function redraw() {
-} */
