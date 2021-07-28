@@ -29,7 +29,7 @@ function startBtn() {
         start_Btn.html('stop');
     } else {
         oscStopped();
-        start_Btn.html('play');
+        start_Btn.html('play!');
     }
 }
 
