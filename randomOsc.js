@@ -46,7 +46,6 @@ function getGood() {
             window.location.reload();
         }
     }
-
 }
 
 function setup() {
