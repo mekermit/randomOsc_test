@@ -49,6 +49,8 @@ function getGood() {
 }
 
 function setup() {
+    alert('start!');
+
     createCanvas(400, 400);
 
     osc = new p5.Oscillator(0, 'sine');
