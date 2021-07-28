@@ -58,7 +58,6 @@ function setup() {
 
     freqArray = document.getElementsByName('frequency');
     rF = int(random(1, freqArray.length));
-    console.log(rF)
     randfr = int(freqArray[rF].value);
 
     /* for (let rF = 1; rF < freqArray.length; rF++) {
