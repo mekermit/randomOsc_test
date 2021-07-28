@@ -5,6 +5,7 @@ let frequency;
 let freqArray;
 let randomizedFreq;
 let randfr;
+let start_Btn;
 
 /* function radioEqValue() {
     const frequency = document.querySelector('input[name="frequency"]:checked').value;
@@ -12,25 +13,25 @@ let randfr;
     return radioEqFreq;
 } */
 
-/* function oscPlaying() {
+function oscPlaying() {
     osc.start();
     playing = true;
-} */
+}
 
-/* function oscStopped() {
+function oscStopped() {
     osc.stop();
     playing = false;
-} */
+}
 
-/* function playStopBtn() {
+function startBtn() {
     if (playing == false) {
         oscPlaying();
-        pSBtn.html('stop');
+        start_Btn.html('stop');
     } else {
         oscStopped();
-        pSBtn.html('play');
+        start_Btn.html('play');
     }
-} */
+}
 
 function getGood() {
     if (frequency !== 0) {
@@ -49,8 +50,6 @@ function getGood() {
 }
 
 function setup() {
-    alert('start!');
-
     createCanvas(400, 400);
 
     osc = new p5.Oscillator(0, 'sine');
@@ -66,10 +65,8 @@ function setup() {
         randomizedFreq = int(freqArray[rF].value);
     } */
 
-    /* pSBtn = createButton('play');
-    pSBtn.mousePressed(playStopBtn); */
-
-    osc.start();
+    start_Btn = createButton('start!');
+    start_Btn.mousePressed(startBtn);
 }
 
 function draw() {
